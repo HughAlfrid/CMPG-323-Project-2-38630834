@@ -275,7 +275,6 @@ C:\Users\User\source\repos\Project 2\bin\Debug\net6.0\runtimes\unix\lib\net6.0\S
 C:\Users\User\source\repos\Project 2\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
 C:\Users\User\source\repos\Project 2\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\User\source\repos\Project 2\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
-C:\Users\User\Source\Repos\HughAlfrid\CMPG-323-Project-2-38630834\Project 2\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\User\Source\Repos\HughAlfrid\CMPG-323-Project-2-38630834\Project 2\bin\Debug\net6.0\appsettings.json
 C:\Users\User\Source\Repos\HughAlfrid\CMPG-323-Project-2-38630834\Project 2\bin\Debug\net6.0\Project 2.exe
 C:\Users\User\Source\Repos\HughAlfrid\CMPG-323-Project-2-38630834\Project 2\bin\Debug\net6.0\Project 2.deps.json
@@ -552,3 +551,9 @@ C:\Users\User\Source\Repos\HughAlfrid\CMPG-323-Project-2-38630834\Project 2\obj\
 C:\Users\User\Source\Repos\HughAlfrid\CMPG-323-Project-2-38630834\Project 2\obj\Debug\net6.0\Project 2.pdb
 C:\Users\User\Source\Repos\HughAlfrid\CMPG-323-Project-2-38630834\Project 2\obj\Debug\net6.0\Project 2.genruntimeconfig.cache
 C:\Users\User\Source\Repos\HughAlfrid\CMPG-323-Project-2-38630834\Project 2\obj\Debug\net6.0\ref\Project 2.dll
+C:\Users\User\Source\Repos\HughAlfrid\CMPG-323-Project-2-38630834\Project 2\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\User\Source\Repos\HughAlfrid\CMPG-323-Project-2-38630834\Project 2\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\User\Source\Repos\HughAlfrid\CMPG-323-Project-2-38630834\Project 2\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\User\Source\Repos\HughAlfrid\CMPG-323-Project-2-38630834\Project 2\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\User\Source\Repos\HughAlfrid\CMPG-323-Project-2-38630834\Project 2\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\User\Source\Repos\HughAlfrid\CMPG-323-Project-2-38630834\Project 2\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
