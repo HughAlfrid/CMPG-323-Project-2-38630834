@@ -2,8 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\Project 2",
+    "\\Project 2\\Controllers",
     "\\Project 2\\Migrations"
   ],
-  "SelectedNode": "\\Project 2\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+  "SelectedNode": "\\Project 2\\Controllers\\CustomersController.cs",
   "PreviewInSolutionExplorer": false
 }
