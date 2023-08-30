@@ -11,56 +11,55 @@ namespace Project_2.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class OrderDetailsController : ControllerBase
+    public class CustomersController : ControllerBase
     {
         private readonly zaazrcmpg323sqlContext _context;
 
-        public OrderDetailsController(zaazrcmpg323sqlContext context)
+        public CustomersController(zaazrcmpg323sqlContext context)
         {
             _context = context;
         }
 
-
-        // GET: api/OrderDetails
+        // GET: api/Customers
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<OrderDetail>>> GetOrderDetails()
+        public async Task<ActionResult<IEnumerable<Customer>>> GetCustomers()
         {
-          if (_context.OrderDetails == null)
+          if (_context.Customers == null)
           {
               return NotFound();
           }
-            return await _context.OrderDetails.ToListAsync();
+            return await _context.Customers.ToListAsync();
         }
 
-        // GET: api/OrderDetails/5
+        // GET: api/Customers/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<OrderDetail>> GetOrderDetail(short id)
+        public async Task<ActionResult<Customer>> GetCustomer(short id)
         {
-          if (_context.OrderDetails == null)
+          if (_context.Customers == null)
           {
               return NotFound();
           }
-            var orderDetail = await _context.OrderDetails.FindAsync(id);
+            var customer = await _context.Customers.FindAsync(id);
 
-            if (orderDetail == null)
+            if (customer == null)
             {
                 return NotFound();
             }
 
-            return orderDetail;
+            return customer;
         }
 
-        // PUT: api/OrderDetails/5
+        // PUT: api/Customers/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutOrderDetail(short id, OrderDetail orderDetail)
+        public async Task<IActionResult> PutCustomer(short id, Customer customer)
         {
-            if (id != orderDetail.OrderDetailsId)
+            if (id != customer.CustomerId)
             {
                 return BadRequest();
             }
 
-            _context.Entry(orderDetail).State = EntityState.Modified;
+            _context.Entry(customer).State = EntityState.Modified;
 
             try
             {
@@ -68,7 +67,7 @@ namespace Project_2.Controllers
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!OrderDetailExists(id))
+                if (!CustomerExists(id))
                 {
                     return NotFound();
                 }
@@ -81,23 +80,23 @@ namespace Project_2.Controllers
             return NoContent();
         }
 
-        // POST: api/OrderDetails
+        // POST: api/Customers
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<OrderDetail>> PostOrderDetail(OrderDetail orderDetail)
+        public async Task<ActionResult<Customer>> PostCustomer(Customer customer)
         {
-          if (_context.OrderDetails == null)
+          if (_context.Customers == null)
           {
-              return Problem("Entity set 'zaazrcmpg323sqlContext.OrderDetails'  is null.");
+              return Problem("Entity set 'zaazrcmpg323sqlContext.Customers'  is null.");
           }
-            _context.OrderDetails.Add(orderDetail);
+            _context.Customers.Add(customer);
             try
             {
                 await _context.SaveChangesAsync();
             }
             catch (DbUpdateException)
             {
-                if (OrderDetailExists(orderDetail.OrderDetailsId))
+                if (CustomerExists(customer.CustomerId))
                 {
                     return Conflict();
                 }
@@ -107,32 +106,32 @@ namespace Project_2.Controllers
                 }
             }
 
-            return CreatedAtAction("GetOrderDetail", new { id = orderDetail.OrderDetailsId }, orderDetail);
+            return CreatedAtAction("GetCustomer", new { id = customer.CustomerId }, customer);
         }
 
-        // DELETE: api/OrderDetails/5
+        // DELETE: api/Customers/5
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteOrderDetail(short id)
+        public async Task<IActionResult> DeleteCustomer(short id)
         {
-            if (_context.OrderDetails == null)
+            if (_context.Customers == null)
             {
                 return NotFound();
             }
-            var orderDetail = await _context.OrderDetails.FindAsync(id);
-            if (orderDetail == null)
+            var customer = await _context.Customers.FindAsync(id);
+            if (customer == null)
             {
                 return NotFound();
             }
 
-            _context.OrderDetails.Remove(orderDetail);
+            _context.Customers.Remove(customer);
             await _context.SaveChangesAsync();
 
             return NoContent();
         }
 
-        private bool OrderDetailExists(short id)
+        private bool CustomerExists(short id)
         {
-            return (_context.OrderDetails?.Any(e => e.OrderDetailsId == id)).GetValueOrDefault();
+            return (_context.Customers?.Any(e => e.CustomerId == id)).GetValueOrDefault();
         }
     }
 }

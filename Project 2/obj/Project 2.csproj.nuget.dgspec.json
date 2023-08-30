@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\source\\repos\\Project 2\\Project 2.csproj": {}
+    "C:\\Users\\User\\Source\\Repos\\HughAlfrid\\CMPG-323-Project-2-38630834\\Project 2\\Project 2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\source\\repos\\Project 2\\Project 2.csproj": {
+    "C:\\Users\\User\\Source\\Repos\\HughAlfrid\\CMPG-323-Project-2-38630834\\Project 2\\Project 2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\source\\repos\\Project 2\\Project 2.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Source\\Repos\\HughAlfrid\\CMPG-323-Project-2-38630834\\Project 2\\Project 2.csproj",
         "projectName": "Project 2",
-        "projectPath": "C:\\Users\\User\\source\\repos\\Project 2\\Project 2.csproj",
+        "projectPath": "C:\\Users\\User\\Source\\Repos\\HughAlfrid\\CMPG-323-Project-2-38630834\\Project 2\\Project 2.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\source\\repos\\Project 2\\obj\\",
+        "outputPath": "C:\\Users\\User\\Source\\Repos\\HughAlfrid\\CMPG-323-Project-2-38630834\\Project 2\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
