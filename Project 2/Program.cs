@@ -15,6 +15,7 @@ using Swashbuckle.AspNetCore.Swagger;
 using Swashbuckle.AspNetCore.SwaggerGen;
 using Swashbuckle.AspNetCore.SwaggerUI;
 using System.Linq;
+using Project_2.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -23,6 +24,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 
 builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer("name=ConnectionStrings:ConnStr"));
+builder.Services.AddDbContext<zaazrcmpg323sqlContext>(options => options.UseSqlServer("name=ConnectionStrings:ConnStr"));
 
 // For Identity  
 builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
