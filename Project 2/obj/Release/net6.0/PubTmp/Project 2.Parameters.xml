@@ -3,4 +3,7 @@
   <parameter name="IIS Web Application Name" description="" value="Project220230826110036" tags="IisApp">
     <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\User\\Source\\Repos\\HughAlfrid\\CMPG-323-Project-2-38630834\\Project\ 2\\obj\\Release\\net6\.0\\PubTmp\\Out\\$" />
   </parameter>
+  <parameter name="JWTAuthentication.Authentication.ApplicationDbContext" description="" value="Password=azr@nwu1;Persist Security Info=True;User ID=serveradmin;Initial Catalog=zaazrcmpg323sql;Data Source=zaazr-cmpg323-data.database.windows.net" tags="dbfullsql">
+    <parameterEntry kind="ProviderPath" scope="dbfullsql" match="^C:\\Users\\User\\Source\\Repos\\HughAlfrid\\CMPG-323-Project-2-38630834\\Project\ 2\\obj\\Release\\net6\.0\\PubTmp\\EFSQLScripts\\JWTAuthentication\.Authentication\.ApplicationDbContext\.sql$" />
+  </parameter>
 </parameters>
