@@ -11,7 +11,7 @@ using Project_2.Models;
 namespace Project_2.Controllers
 {
     [Route("api/[controller]")]
-    [Authorize]
+  //  [Authorize]
     [ApiController]
     public class ProductsController : ControllerBase
     {
