@@ -48,9 +48,9 @@ builder.Services.AddAuthentication(options =>
                     ValidateIssuer = true,
                     ValidateAudience = true,
                     ValidateLifetime = true,
-                    ValidIssuer = builder.Configuration["Jwt:Issuer"],
-                    ValidAudience = builder.Configuration["Jwt:Audience"],
-                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
+                    ValidIssuer = builder.Configuration["Jwt:ValidIssuer"],
+                    ValidAudience = builder.Configuration["Jwt:ValidAudience"],
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Secret"]))
                 };
             });
 
@@ -73,12 +73,13 @@ builder.Services.AddSwaggerGen(c =>
     var securityScheme = new OpenApiSecurityScheme
     {
         Name = "Authorization",
-        Description = "Enter 'Bearer {token}'",
+        Description = "JWT Authorization header using the Bearer scheme. \r\n\r\n Enter 'Bearer' [space] and then your token in the text input below.\r\n\r\nExample: \"Bearer 1safsfsdfdfd\"",
         In = ParameterLocation.Header,
         Type = SecuritySchemeType.ApiKey,
         Scheme = "Bearer",
         BearerFormat = "JWT"
     };
+
     c.AddSecurityDefinition("Bearer", securityScheme);
 
     // Require the Bearer token for all API operations
